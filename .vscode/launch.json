@@ -52,7 +52,8 @@
             "name": "OneOfEachStats",
             "request": "launch",
             "mainClass": "OneOfEachStats",
-            "projectName": "hw02-lidorStudent_f45cbe72"
+            "projectName": "hw02-lidorStudent_f45cbe72",
+            "args": "1000 1"
         },
         {
             "type": "java",
@@ -60,7 +61,7 @@
             "request": "launch",
             "mainClass": "OneOfEachStats1",
             "projectName": "hw02-lidorStudent_f45cbe72",
-            "args": "1000"
+            "args": "100000"
         },
         {
             "type": "java",

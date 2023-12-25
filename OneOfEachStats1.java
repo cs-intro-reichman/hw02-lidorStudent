@@ -7,8 +7,10 @@
 public class OneOfEachStats1 {
 	public static void main (String[] args) {
 		int numOfExperiments = Integer.parseInt(args[0]);
+		int twoChildren = 0;
+		int threeChildren = 0;
+		int fourOrMoreChildren = 0;
 		double countAllChildren = 0;
-		int twoChildren = 0, threeChildren = 0, fourOrMoreChildren = 0;
 		for (int i = 0; i < numOfExperiments; i++) {
 			int numOfChildren = 0;
 			double randomGender = 0;
@@ -19,11 +21,9 @@ public class OneOfEachStats1 {
 				if (randomGender < 0.5) {
 					haveBoy = true;
 					++numOfChildren;
-					//System.out.print("b ");
 				} else {
 					haveGirl = true;
 					++numOfChildren;
-					//System.out.print("g ");
 				}
 			}
 			if (numOfChildren == 2) {
@@ -34,8 +34,6 @@ public class OneOfEachStats1 {
 				++fourOrMoreChildren;
 			}
 			countAllChildren += numOfChildren;
-			//System.out.println();
-			//System.out.println("You made it... and you now have " + numOfChildren + " children.");
 		}
 		System.out.println("Average: " + (countAllChildren / numOfExperiments) +
 						   " children to get at least one of each gender.");
