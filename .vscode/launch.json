@@ -15,7 +15,8 @@
             "name": "DamkaBoard",
             "request": "launch",
             "mainClass": "DamkaBoard",
-            "projectName": "hw02-lidorStudent_f45cbe72"
+            "projectName": "hw02-lidorStudent_f45cbe72",
+            "args": "2"
         },
         {
             "type": "java",
