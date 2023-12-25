@@ -72,7 +72,8 @@
             "name": "Reverse",
             "request": "launch",
             "mainClass": "Reverse",
-            "projectName": "hw02-lidorStudent_f45cbe72"
+            "projectName": "hw02-lidorStudent_f45cbe72",
+            "args": "abcxyz"
         }
     ]
 }
