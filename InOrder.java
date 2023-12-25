@@ -6,8 +6,10 @@ public class InOrder {
 	public static void main (String[] args) {
 		int randomNum1 = (int) (Math.random() * 10);
 		int randomNum2 = (int) (Math.random() * 10);
-		System.out.print(randomNum1);
 		do {
+			randomNum1 = randomNum2;
+			randomNum2 = (int) (Math.random() * 10);
+			System.out.print(randomNum1 + " ");
 			
 		} while (randomNum1 <= randomNum2);
 	}
