@@ -4,13 +4,13 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		int randomNum1 = 0;
-		int randomNum2 = (int) (Math.random() * 10);
+		int prevNum = -1;
+		int currNum = (int) (Math.random() * 10);
 		do {
-			randomNum1 = randomNum2;
-			randomNum2 = (int) (Math.random() * 10);
-			System.out.print(randomNum1 + " ");
+			prevNum = currNum;
+			currNum = (int) (Math.random() * 10);
+			System.out.print(prevNum + " ");
 			
-		} while (randomNum1 <= randomNum2);
+		} while (prevNum <= currNum);
 	}
 }
