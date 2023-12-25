@@ -4,7 +4,7 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		int randomNum1 = (int) (Math.random() * 10);
+		int randomNum1 = 0;
 		int randomNum2 = (int) (Math.random() * 10);
 		do {
 			randomNum1 = randomNum2;
