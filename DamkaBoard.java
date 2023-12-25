@@ -5,11 +5,12 @@ public class DamkaBoard {
 	public static void main(String[] args) {
 		int size = Integer.parseInt(args[0]);
 		for (int i = 0; i < size; i++) {
-			if ((i % 2) != 0) {
-				System.out.print(" ");
-			}
-			for (int j = 0; j < size; j++) {
-				System.out.print("* ");
+			for (int j = 0; j < 2*size; j++) {
+				if ((i + j) % 2 == 0) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
 			}
 			System.out.println();
 		}
