@@ -5,6 +5,7 @@ public class Perfect {
 	public static void main (String[] args) {
 		int num = Integer.parseInt(args[0]);
 		int sum = 1;
+		boolean isNotZeroOrOne = (num != 0) && (num != 1);
 		String yesPerfectNumMessage = num + " is a perfect number since " + num + " = 1";
 		String notPerfectNumMessage = num + " is not a perfect number";
 		for (int i = 2; i < num; i++) {
@@ -13,7 +14,7 @@ public class Perfect {
 				yesPerfectNumMessage += " + " + i;
 			}
 		}
-		if (num == sum) {
+		if ((num == sum) && isNotZeroOrOne) {
 			System.out.println(yesPerfectNumMessage);
 		} else {
 			System.out.println(notPerfectNumMessage);
