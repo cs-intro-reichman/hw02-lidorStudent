@@ -65,7 +65,8 @@
             "name": "Perfect",
             "request": "launch",
             "mainClass": "Perfect",
-            "projectName": "hw02-lidorStudent_f45cbe72"
+            "projectName": "hw02-lidorStudent_f45cbe72",
+            "args": "12"
         },
         {
             "type": "java",
