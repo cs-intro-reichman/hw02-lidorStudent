@@ -6,7 +6,7 @@ public class Reverse {
 	public static void main (String[] args){
 		String word = args[0];
 		int length = word.length();
-		int middle = (length / 2) - 1;
+		int middle = (int) Math.ceil((length / 2.0) - 1);
 		for (int i = (length - 1); i >= 0; i--) {
 			System.out.print(word.charAt(i));
 		}
