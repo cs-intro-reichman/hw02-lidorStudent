@@ -15,6 +15,7 @@ public class OneOfEachStats {
 		int twoChildren = 0;
 		int threeChildren = 0;
 		int fourOrMoreChildren = 0;
+		int max = 0;
 		double countAllChildren = 0;
 		for (int i = 0; i < numOfExperiments; i++) {
 			int numOfChildren = 0;
@@ -46,9 +47,10 @@ public class OneOfEachStats {
 		System.out.println("Number of families with 3 children: " + threeChildren);
 		System.out.println("Number of families with 4 or more children: " + fourOrMoreChildren);
 		System.out.print("The most common number of children is ");
-		if (Math.max(Math.max(twoChildren, threeChildren), fourOrMoreChildren) == twoChildren) {
+		max = Math.max(Math.max(twoChildren, threeChildren), fourOrMoreChildren);
+		if (max == twoChildren) {
 			System.out.println("2.");
-		} else if (Math.max(Math.max(twoChildren, threeChildren), fourOrMoreChildren) == threeChildren) {
+		} else if (max == threeChildren) {
 			System.out.println("3.");
 		} else {
 			System.out.println("4 or more.");
