@@ -8,6 +8,7 @@ public class OneOfEach {
 		double randomGender = 0;
 		boolean haveBoy = false;
 		boolean haveGirl = false;
+		// very good use of booleans fro conditions
 		while (!(haveBoy && haveGirl)) {
 			randomGender = Math.random();
 			if (randomGender < 0.5) {
